@@ -1,0 +1,6 @@
+<div class="topnav">
+  <a [ngClass]="ButtonActive1 == false ? 'active' : ''"  (click)="ButtonActive1 = false;ButtonActive2 = true;ButtonActive3 = true;ButtonActive4 = true; ">Home</a>
+  <a [ngClass]="ButtonActive2 == false ? 'active' : ''"  (click)="ButtonActive1 = true;ButtonActive2 = false;ButtonActive3 = true;ButtonActive4 = true; ">News</a>
+  <a [ngClass]="ButtonActive3 == false ? 'active' : ''"  (click)="ButtonActive1 = true;ButtonActive2 = true;ButtonActive3 = false;ButtonActive4 = true; ">Contact</a>
+  <a [ngClass]="ButtonActive4 == false ? 'active' : ''"  (click)="ButtonActive1 = true;ButtonActive2 = true;ButtonActive3 = true;ButtonActive4 = false; ">About</a>
+</div>
